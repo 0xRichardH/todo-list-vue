@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
-import Home from './components/HelloFromVux'
+import Todo from './components/TodoList'
+import Tomato from './components/Tomato'
 import VueRouter from 'vue-router'
 
 const FastClick = require('fastclick')
@@ -12,7 +13,10 @@ const router = new VueRouter()
 
 router.map({
   '/': {
-    component: Home
+    component: Todo
+  },
+  'tomato': {
+    component: Tomato
   }
 })
 
